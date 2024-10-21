@@ -1,0 +1,30 @@
+POST http://localhost:3000/seasons
+Content-Type: application/json
+
+{
+    "name": "Fusion, Kid Buu and Peaceful World Sagas",
+    "number": 9,
+    "year": "1995-96",
+    "episodes_count": "38"
+}
+
+###
+
+GET http://localhost:3000/seasons?episodes_count=35
+
+###
+
+GET http://localhost:3000/seasons/1
+
+###
+
+PUT http://localhost:3000/seasons/2
+Content-Type: application/json
+
+{
+    "number": 2
+}
+
+###
+
+DELETE http://localhost:3000/seasons/1

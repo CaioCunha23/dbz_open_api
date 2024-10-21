@@ -1,0 +1,30 @@
+POST http://localhost:3000/characters
+Content-Type: application/json
+
+{
+    "name": "Uub",
+    "role": "Minor",
+    "species": "Human",
+    "imageUrl": "https://cdn.anime-planet.com/characters/primary/uub-1-130x180.jpg?t=1625966251"
+}
+
+###
+
+GET http://localhost:3000/characters?limit=5&page=1&order=name
+
+###
+
+GET http://localhost:3000/characters/1
+
+###
+
+PUT http://localhost:3000/characters/40
+Content-Type: application/json
+
+{
+    "imageUrl": "https://cdn.anime-planet.com/characters/primary/bardock-1-130x185.jpg?t=1625966205"
+}
+
+###
+
+DELETE http://localhost:3000/characters/1

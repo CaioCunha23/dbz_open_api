@@ -1,0 +1,33 @@
+POST http://localhost:3000/seasons/9/episodes
+Content-Type: application/json
+
+{
+    "title": "Goku's Next Journey",
+    "duration": "24:12",
+    "rating": 4.3
+}
+
+###
+
+GET http://localhost:3000/episodes?limit=5&page=1&title=cell
+
+### 
+
+GET http://localhost:3000/episodes/1
+
+###
+
+GET http://localhost:3000/seasons/1/episodes
+
+###
+
+PUT http://localhost:3000/episodes/2
+Content-Type: application/json
+
+{
+    "rating": 4.3
+}
+
+###
+
+DELETE http://localhost:3000/episodes/292
